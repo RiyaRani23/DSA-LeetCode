@@ -20,4 +20,22 @@ public class EvenOddSorting {
        }
        return nums;
     }
+    // Space complexity = O(n) but less time complexity
+
+    // public int[] sortArrayByParity(int[] nums) {
+    //     int n=nums.length;
+    //     int x[]=new int[n];
+    //     int left=0;
+    //     int right=n-1;
+    //     for(int i=0;i<n;i++){
+    //         if(nums[i]%2==0){
+    //             x[left++]=nums[i];
+    //         }
+    //         else{
+    //             x[right--]=nums[i];
+    //         }
+    //     }
+    //     return x;
+
+    // }
 }
