@@ -54,3 +54,39 @@ using Java.
 - [ ] Top K Problems
 - [ ] Two Heaps
 - [ ] Heap Sort
+
+## LeetCode 1046 - Last Stone Weight
+
+### Problem
+Given an array of stones, repeatedly select the two heaviest stones and smash them together.
+
+### Approach
+- Use a Max Heap.
+- The Max Heap gives the two largest stones in O(log n).
+- Remove the two largest stones.
+- If they are different, insert their difference back into the heap.
+- Repeat until one or zero stones remain.
+
+### Example
+
+stones = [2, 7, 4, 1, 8, 1]
+
+Max Heap:
+[8, 7, 4, 2, 1, 1]
+
+8 - 7 = 1
+4 - 2 = 2
+2 - 1 = 1
+1 - 1 = 0
+
+Answer = 1
+
+### Complexity
+
+Time Complexity: O(n log n)
+
+Space Complexity: O(n)
+
+### Key Learning
+
+This problem teaches how a Max Heap can efficiently give us the largest two elements whenever required.
